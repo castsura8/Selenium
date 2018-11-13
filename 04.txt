@@ -1,0 +1,18 @@
+#using list comprehnesions to shorten for loops
+
+
+x = [1,2,3,4,5]
+#creating a variable to store the result
+result = []
+#creating a loop for going thru the list and multiplying # using also append to add
+for y in range(len(x)):   # or you can use range(5):
+    result.append(x[y] * 2 )
+# list compression --- usfulness -- less code
+
+Sura = [(element * 2 ) for element in x ]
+
+
+print(Sura)
+#code
+#[(action) for element in x]
+

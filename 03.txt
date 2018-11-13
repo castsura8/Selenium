@@ -1,0 +1,57 @@
+#practical applicaiton would be blogs list,  list of clients or order
+
+
+# this is the basic of how they use
+x = [
+
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+result  = []
+
+for item in x:   # if the number is divisibile by 2 then print
+    for y in item:
+        if y % 2 == 0:
+
+           result.append(y)  # append allow us to put it in list format
+
+print(result)
+
+print("prints basic normally")
+# nested compression
+
+one = [[y for y in item if y % 2 == 0] for item in x]
+
+print(one)
+
+# with out the nest
+
+no = [y for item in x for y in item if y % 2 == 0]
+
+print(no)
+print("----------------using nested compression -- ")
+# video 05 - simplify collapsing -- flatting
+
+result  = []
+for sublist in x:
+    for y in sublist:
+        result.append(y)  # y ***
+
+print(result)
+print("--- using  or simplifig -- flatting ") # used for larger nest
+two = [y for sublist in x for y in sublist]
+
+print(two)
+
+print("-------------------------------------using itertools chain")
+
+# itertools -- to make a list -- used also to flatted nest nest
+
+import itertools
+
+itertools.chain(*x)  # use the * to unpack
+
+conv = list(itertools.chain(*x))
+
+print(conv)

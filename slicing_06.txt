@@ -1,0 +1,45 @@
+
+#different slicing list trick
+
+# reversing a list with slices
+# head and tail a list with slice -- reverse , head and tail
+
+
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(x[0])
+
+# slicing notraion
+print(x[0:3])
+
+print(x[3:])
+
+#tail
+print(x[6:])
+
+# fancy
+print(x[0:6:2])
+
+print(x[-2:])
+
+# reversing a list with slice notaiton
+
+print(x[::-1])
+
+# reverse subset of the list  # starting from last 3 and then reverse it
+
+print(x[-3::-1])
+
+
+# list[start:stop:step] -- logic
+
+
+# Chapter summary
+
+#used list comprehension to shorten for loops
+#inserted if statements using coditional list comprehensions
+# operated on lists of lists with nested list comprehensions
+#simplified the way you collapse nested lists
+#listed slicing tricks
+
+

@@ -1,0 +1,36 @@
+
+    class CalanderSelection():
+
+            def test1(self):
+                baseUrl = "http://www.cnn.com"
+                driver = webdriver.Firefox()
+                driver.maximize_window()
+                driver.get(baseUrl)
+                driver.implicit_wait(3)
+
+                #clicking flight tab
+
+                driver.find_element_by_id("tab-flight-tab").click()
+
+                #find departing field
+
+                departField = driver.find_element_by_id("flight-tab")
+                departField.click()
+
+                #finding date to be selected
+
+                #date to select
+
+                dateToSelect = driver.find_element_by_id(By.Xpath //div[@class='datepicker-cal-month'][1]//button[text()='30'])
+
+        #click the date
+
+                 dateToSelect.click()
+                  time.sleep(3)
+                  driver.quit()
+
+ff = CalanderSelection()
+ff.test ()
+
+
+

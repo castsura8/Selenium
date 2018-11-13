@@ -1,0 +1,28 @@
+x = [1, 2, 3, 4, 5, 6]
+result = []
+
+for y  in range(len(x)):  # if number is even , multiply the that number by 2
+    if x[y] % 2 == 0:
+        result.append(x[y] * 2)
+    else:
+        result.append(x[y])
+
+
+
+
+#using -in line statement --
+
+math = [element * 2  if element % 2 == 0 else element  for element in x]
+
+# print(math)
+
+# other way also -- # filtering the reuslt using element
+
+fil = [element * 2  for element in x if element % 2 == 0 ]    # [action / for declaratin/ conditional
+
+print(fil)
+
+
+
+#collapse if statement inside list compression
+
